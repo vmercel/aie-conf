@@ -1,23 +1,13 @@
-<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
-<html xmlns="http://www.w3.org/1999/xhtml">
-
+<!DOCTYPE html>
 <html>
   <head>
- 
-
-
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.10.2/css/all.min.css">
-
-    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <title>Conference Web App</title>
+  <style>
 
- 
-    <style>
-
-/*slide show css */
-
-
-
+    
 
 
 @import url(https://fonts.googleapis.com/css?family=Exo:100);
@@ -348,47 +338,6 @@ font-size:7vw;
 /*main body */
 
 
-
- .section h2,
-.section p,
-.section ul {
-   text-align: center;
-
-}
-
-body {
-
-
-   font-family: Arial, Helvetica, sans-serif;
-   font-size: 16px;
-   color: #333;
-}
-
-
-
-.section {
-   box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
-   padding: 20px;
-   margin-bottom: 20px;
-}
-
-.container{
-  line-height: 1.5;
-  padding: 40px;
-  max-width: 800px; margin: 0 auto;
-}
-
-
-.shifted{
-
-
-  font-size: 16px;
-    line-height: 18px;
-    color: #666666;
-    font-weight: 400;
-    line-height: 170%;
-}
-
 /*end of main body */
 
 
@@ -411,266 +360,6 @@ body {
 body {
 
 }
-
-
-
-.course {
-	background-color: #fff;
-	border-radius: 10px;
-	box-shadow: 0 10px 10px rgba(0, 0, 0, 0.2);
-	display: flex;
-	max-width: 100%;
-	margin: 20px;
-	overflow: hidden;
-	width: 700px;
-}
-
-.course h5 {
-	opacity: 0.6;
-	margin: 0;
-	letter-spacing: 1px;
-	text-transform: uppercase;
-}
-
-.course h2 {
-	letter-spacing: 1px;
-	margin: 10px 0;
-}
-
-.course-preview {
-	background-color: #6b0b5d;
-	color: #fff;
-	padding: 30px;
-	max-width: 250px;
-}
-
-.course-preview a {
-	color: #fff;
-	display: inline-block;
-	font-size: 12px;
-	opacity: 0.6;
-	margin-top: 30px;
-	text-decoration: none;
-}
-
-.course-info {
-	padding: 30px;
-	position: relative;
-	width: 100%;
-}
-
-.progress-container {
-	position: absolute;
-	top: 30px;
-	right: 30px;
-	text-align: right;
-	width: 150px;
-}
-
-.progress {
-	background-color: #ddd;
-	border-radius: 3px;
-	height: 5px;
-	width: 100%;
-}
-
-.progress::after {
-	border-radius: 3px;
-	background-color: #2A265F;
-	content: '';
-	position: absolute;
-	top: 0;
-	left: 0;
-	height: 5px;
-	width: 66%;
-}
-
-.progress-text {
-	font-size: 10px;
-	opacity: 0.6;
-	letter-spacing: 1px;
-}
-
-.btn {
-	background-color: #6b0b5d;
-	border: 0;
-	border-radius: 50px;
-	box-shadow: 0 10px 10px rgba(0, 0, 0, 0.2);
-	color: #fff;
-	font-size: 16px;
-	padding: 12px 25px;
-	position: absolute;
-	bottom: 30px;
-	right: 30px;
-	letter-spacing: 1px;
-}
-
-/* SOCIAL PANEL CSS */
-.social-panel-container {
-	position: fixed;
-	right: 0;
-	bottom: 80px;
-	transform: translateX(100%);
-	transition: transform 0.4s ease-in-out;
-}
-
-.social-panel-container.visible {
-	transform: translateX(-10px);
-}
-
-.social-panel {	
-	background-color: #fff;
-	border-radius: 16px;
-	box-shadow: 0 16px 31px -17px rgba(0,31,97,0.6);
-	border: 5px solid #001F61;
-	display: flex;
-	flex-direction: column;
-	justify-content: center;
-	align-items: center;
-	font-family: 'Muli';
-	position: relative;
-	height: 169px;	
-	width: 370px;
-	max-width: calc(100% - 10px);
-}
-
-.social-panel button.close-btn {
-	border: 0;
-	color: #97A5CE;
-	cursor: pointer;
-	font-size: 20px;
-	position: absolute;
-	top: 5px;
-	right: 5px;
-}
-
-.social-panel button.close-btn:focus {
-	outline: none;
-}
-
-.social-panel p {
-	background-color: #001F61;
-	border-radius: 0 0 10px 10px;
-	color: #fff;
-	font-size: 14px;
-	line-height: 18px;
-	padding: 2px 17px 6px;
-	position: absolute;
-	top: 0;
-	left: 50%;
-	margin: 0;
-	transform: translateX(-50%);
-	text-align: center;
-	width: 235px;
-}
-
-.social-panel p i {
-	margin: 0 5px;
-}
-
-.social-panel p a {
-	color: #FF7500;
-	text-decoration: none;
-}
-
-.social-panel h4 {
-	margin: 20px 0;
-	color: #97A5CE;	
-	font-family: 'Muli';	
-	font-size: 14px;	
-	line-height: 18px;
-	text-transform: uppercase;
-}
-
-.social-panel ul {
-	display: flex;
-	list-style-type: none;
-	padding: 0;
-	margin: 0;
-}
-
-.social-panel ul li {
-	margin: 0 10px;
-}
-
-.social-panel ul li a {
-	border: 1px solid #DCE1F2;
-	border-radius: 50%;
-	color: #001F61;
-	font-size: 20px;
-	display: flex;
-	justify-content: center;
-	align-items: center;
-	height: 50px;
-	width: 50px;
-	text-decoration: none;
-}
-
-.social-panel ul li a:hover {
-	border-color: #FF6A00;
-	box-shadow: 0 9px 12px -9px #FF6A00;
-}
-
-.floating-btn {
-	border-radius: 26.5px;
-	background-color: #001F61;
-	border: 1px solid #001F61;
-	box-shadow: 0 16px 22px -17px #03153B;
-	color: #fff;
-	cursor: pointer;
-	font-size: 16px;
-	line-height: 20px;
-	padding: 12px 20px;
-	position: fixed;
-	bottom: 20px;
-	right: 20px;
-	z-index: 999;
-}
-
-.floating-btn:hover {
-	background-color: #ffffff;
-	color: #001F61;
-}
-
-.floating-btn:focus {
-	outline: none;
-}
-
-.floating-text {
-	background-color: #001F61;
-	border-radius: 10px 10px 0 0;
-	color: #fff;
-	font-family: 'Muli';
-	padding: 7px 15px;
-	position: fixed;
-	bottom: 0;
-	left: 50%;
-	transform: translateX(-50%);
-	text-align: center;
-	z-index: 998;
-}
-
-.floating-text a {
-	color: #FF7500;
-	text-decoration: none;
-}
-
-@media screen and (max-width: 480px) {
-
-	.social-panel-container.visible {
-		transform: translateX(0px);
-	}
-	
-	.floating-btn {
-		right: 10px;
-	}
-}
-
-
-
-
-
-
 
 
 
@@ -738,23 +427,21 @@ text-align:left;
 margin:0% 3%;
 }
 }
-
-
- /*End footer*/
-
     </style>
-    </head>
+  </head>
   <body>
-    
  
-  
+    
+
+
+
 
     <div class="topnav" id="myTopnav">
       <a href="../index.html" class="active">Home</a>
    
       <a href="pastconference.html">Past Conference</a>
      
-      <a href="committees.html">Committees</a>
+      <a href="registration.html">Registration</a>
       
      
 
@@ -799,7 +486,7 @@ margin:0% 3%;
     
      
 
-      <a href="pages/contact.html">Contact</a>
+      <a href="contact.html">Contact</a>
 
 
 
@@ -819,25 +506,25 @@ margin:0% 3%;
         <section class="slider">
           
           <article class="slide one"><span><h1 >2023 International Conference</h1>
-            <h2 >on Smart Technologies and</h1>
-            <h2 >Systems for Internet of Things</h2>
+            <h2 >on Smart Internet of Things</h1>
+            
 
 </span></article><!--
           --><article class="slide two"><span><h1 >2023 International Conference</h1>
-            <h2 >on Smart Technologies and</h1>
-              <h2 >Systems for Internet of Things</h2> </span></article><!--
+            <h2 >on Smart Internet of Things</h1>
+               </span></article><!--
           --><article class="slide three"><span> <h1 >2023 International Conference</h1>
-            <h2 >on Smart Technologies and</h1>
-              <h2 >Systems for Internet of Things</h2></span></article><!--
+            <h2 >on Smart Internet of Things</h1>
+              </span></article><!--
           --><article class="slide four"><span><h1 >2023 International Conference</h1>
-            <h2 >on Smart Technologies and</h1>
-              <h2 >Systems for Internet of Things</h2></span></article><!--
+            <h2 >on Smart Internet of Things</h1>
+              </span></article><!--
           --><article class="slide five"><span><h1 >2023 International Conference</h1>
-            <h2 >on Smart Technologies and</h1>
-              <h2 >Systems for Internet of Things</h2></span></article>
+            <h2 >on Smart Internet of Things</h1>
+              </span></article>
           <article class="slide fiv"><span><h1 >2023 International Conference</h1>
-            <h2 >on Smart Technologies and</h1>
-            <h2 >Systems for Internet of Things</h2></span></article>
+            <h2 >on Smart Internet of Things</h1>
+            </span></article>
           
         </section>
     </header>
@@ -847,6 +534,15 @@ margin:0% 3%;
 
 <br>
 
+
+
+
+
+
+
+<br>
+    <main style="margin-right: 30px; margin-left: 30px; background-color: #f9f9f9; border-radius: 20px; padding: 20px; font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;">
+      
       <div class="contenwt">
 
         
@@ -941,32 +637,6 @@ margin:0% 3%;
       
       
                   </div></div></div>
-
-
-
-
-
-                 
-            
-
-
-
-                 
-
-
-
-            <!-- 
-            <h2 style="text-align: center;"> What's New</h2>
-            <div>
-            <img src="images/news.jpeg" style="width:100%; ">  
-            </div>
-        
--->  
-
-
-
-
-
 
     
     </main>
