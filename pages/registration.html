@@ -662,6 +662,49 @@ p{
 
   font-family: Arial, Helvetica, sans-serif;color:#666666;
 }
+
+.table {
+  width: 100%;
+  border-collapse: collapse;
+}
+
+.table-header,
+.table-row {
+
+  display: flex;
+}
+
+.table-header{
+  background-color: #6b0b5d;
+  color:white;
+}
+.table-header,a{
+  
+  color:white;
+  text-decoration: none;
+}
+.table-row{
+
+  background-color: #f5f4f0;
+}
+.header__item,
+.table-data {
+  flex: 1;
+  padding: 10px;
+  border: 1px solid #ccc;
+}
+
+@media screen and (max-width: 600px) {
+  .table-header,
+  .table-row {
+    flex-wrap: wrap;
+  }
+  
+  .header__item,
+  .table-data {
+    flex-basis: 50%;
+  }
+}
  </style>     
                   
                   <section id="registration">
@@ -683,29 +726,35 @@ p{
                         <div class="row">
             
                           <div>
-                          <table class="table table-bordered text-center">
-                            <thead>
-                              <tr>
-                                <th></th>
-                                <th>Regular</th>
-                                <th>Student</th>
-                                <th>Participant</th>
-                              </tr>
-                            </thead>
-                            <tbody>
-                              <tr>
-                                <td>Standard</td>
-                                <td>$300</td>
-                                <td>$250</td>
-                                <td>$100</td>
-                              </tr>
-                              
-                            </tbody>
+                          
+ <div class="table">
+  <div class="table-header">
+    <div class="header__item"><a id="name" class="filter__link" href="#"></a></div>
+    <div class="header__item"><a id="wins" class="filter__link filter__link--number" href="#">Regular</a></div>
+    <div class="header__item"><a id="draws" class="filter__link filter__link--number" href="#">Student</a></div>
+    <div class="header__item"><a id="losses" class="filter__link filter__link--number" href="#">Participant</a></div>
+  </div>
+  <div class="table-content">
+    <div class="table-row">
+      <div class="table-data"></div>
+      <div class="table-data"></div>
+      <div class="table-data"></div>
+      <div class="table-data"></div>
+      <div class="table-data"></div>
+    </div>
+    <div class="table-row">
+      <div class="table-data">Standard</div>
+      <div class="table-data">$300</div>
+      <div class="table-data">$250</div>
+      <div class="table-data">$100</div>
+    </div>
+  </div>
+</div>
                           </table>
                           </div>
             
                         </div>						
-                        
+                        <br>
                         <p style="text-align:justify;font-family:  Arial, Helvetica, sans-serif;line-height: 30px;">* For 'Student Registration', student must be the first author of the paper and need to provide proof of being a student (a valid student certificate/card).</p>
                         <p>For more than one paper, author need to pay same amount as mentioned above for each paper. Extra pages (more than 6) of submitted publication imply the payment of <sup>$</sup>30 per page. </p>
             
@@ -719,27 +768,42 @@ p{
                         <div class="row">
             
                           <div>
-                          <table class="table table-bordered text-center">
-                            <thead>
-                              <tr>
-                                <th></th>
-                                <th>Regular</th>
-                                <th>Student</th>
-                                <th>Participant</th>
-                              </tr>
-                            </thead>
-                            <tbody>
-                              <tr>
-                                <td>Standard</td>
-                                <td>$250</td>
-                                <td>$200</td>
-                                <td>$100</td>
-                              </tr>
-                              
-                            </tbody>
-                          </table>
+                            <div class="table">
+                              <div class="table-header">
+                                <div class="header__item"><a id="name" class="filter__link" href="#"></a></div>
+                                <div class="header__item"><a id="wins" class="filter__link filter__link--number" href="#">Regular</a></div>
+                                <div class="header__item"><a id="draws" class="filter__link filter__link--number" href="#">Student</a></div>
+                                <div class="header__item"><a id="losses" class="filter__link filter__link--number" href="#">Participant</a></div>
+                            
+                              </div>
+                              <div class="table-content">	
+                                <div class="table-row">		
+                                  <div class="table-data"></div>
+                                  <div class="table-data"></div>
+                                  <div class="table-data"></div>
+                                  <div class="table-data"></div>
+                                  <div class="table-data"></div>
+                                </div>
+                                <div class="table-row">
+                                  <div class="table-data">Standard</div>
+                                  <div class="table-data">$250</div>
+                                  <div class="table-data">$200</div>
+                                  <div class="table-data">$100</div>
+                                
+                                </div>
+                              <div class="table-content">	
+                                <div class="table-row">		
+                                  <div class="table-data"></div>
+                                  <div class="table-data"></div>
+                                  <div class="table-data"></div>
+                                  <div class="table-data"></div>
+                                  <div class="table-data"></div>
+                                </div>
+                              </div>	
+                            </div>
                           </div>
-            
+                          </div>
+            <br>
                         </div>
                         <p>* For 'Student Registration', student must be the first author of the paper and need to provide proof of being a student (a valid student certificate/card).</p>
                         <p>For more than one paper, author need to pay same amount as mentioned above for each paper. Extra pages (more than 6) of submitted publication imply the payment of <sup>$</sup>25 per page. </p>
