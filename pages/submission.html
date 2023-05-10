@@ -246,6 +246,7 @@ text-transform: capitalize;
     }
     
     @media screen and (max-width: 600px) {
+     
       .topnav a:not(:first-child), .dropdown .dropbtn {
         display: none;
       }
@@ -308,6 +309,8 @@ font-size:7vw;
 }
 
 
+
+
     }
 
  
@@ -315,8 +318,7 @@ font-size:7vw;
     @media screen and (min-width: 600px) {
 
 
-
-
+     
       .slide span ,h2{
 
 
@@ -414,6 +416,10 @@ margin:0% 1%;
 }
 
 @media (max-width:720px){
+ 
+
+
+
 .footer{
 text-align:left;
 padding:5%;
@@ -434,6 +440,147 @@ h3{
 
   font-weight: 350;font-size: 24px;line-height: 54px;color: #222222;font-family: 'Tenor Sans';text-transform: capitalize;
 
+}
+
+
+/* download button  */
+@media screen and (max-width: 600px) {
+  .buttons {
+    width: 100%;
+    box-sizing: border-box;
+    text-align: left; /* Align left on mobile devices */
+    margin-left: -1%;
+  }
+
+
+ 
+}
+
+.buttons {
+  display: inline-block;
+  text-decoration: none;
+  text-align: center; /* Center alignment on larger screens */
+  padding: 11px 32px;
+  border: solid 1px #ffffff;
+  border-radius: 4px;
+  font: 18px Arial, Helvetica, sans-serif;
+  font-weight: bold;
+  color: #ffff;
+  background-color: #6b0b5d;
+  background-image: -moz-linear-gradient(top, #6b0b5d 0%, #6b0b5d 100%);
+  background-image: -webkit-linear-gradient(top, #6b0b5d 0%, #6b0b5d 100%);
+  background-image: -o-linear-gradient(top, #6b0b5d 0%, #c28aba 100%);
+  background-image: -ms-linear-gradient(top, #6b0b5d 0%, #c28aba 100%);
+  filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#c28aba', endColorstr='#c28aba', GradientType=0);
+  background-image: linear-gradient(top, #6b0b5d 0%, #c28aba 100%);
+  box-shadow: 0px 0px 2px #fcfcfc, inset 0px 0px 1px #ffffff;
+}
+
+
+  .buttons:hover{
+
+
+    text-decoration:none; 
+ text-align:center; 
+ padding:18px 38px; 
+ border:solid 1px #ffffff; 
+ -webkit-border-radius:4px;
+ -moz-border-radius:4px; 
+ border-radius: 4px; 
+ font:18px Arial, Helvetica, sans-serif; 
+ font-weight:bold; 
+ color:#ffff; 
+ background-color:#6b0b5d; 
+ background-image: -moz-linear-gradient(top, #6b0b5d 0%, #c28aba 100%); 
+ background-image: -webkit-linear-gradient(top, #6b0b5d 0%, #c28aba 100%); 
+ background-image: -o-linear-gradient(top, #6b0b5d 0%, #c28aba 100%); 
+ background-image: -ms-linear-gradient(top, #6b0b5d 0% ,#c28aba 100%); 
+ filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#c28aba', endColorstr='#c28aba',GradientType=0 ); 
+ background-image: linear-gradient(top, #6b0b5d 0% ,#c28aba 100%);   
+ -webkit-box-shadow:0px 0px 2px #fcfcfc, inset 0px 0px 1px #ffffff; 
+ -moz-box-shadow: 0px 0px 2px #fcfcfc,  inset 0px 0px 1px #ffffff;  
+ box-shadow:0px 0px 2px #fcfcfc, inset 0px 0px 1px #ffffff;  
+
+  }
+
+
+
+
+
+
+
+
+
+  /*table cs */
+  .table {
+  width: 100%;
+  border-collapse: collapse;
+}
+
+.table-header,
+.table-row {
+
+  display: flex;
+}
+
+.table-header{
+  background-color: #6b0b5d;
+  color:white;
+}
+.table-header,a{
+  
+  color:white;
+  text-decoration: none;
+}
+.table-row{
+
+  background-color: #f5f4f0;
+}
+.header__item,
+.table-data {
+  flex: 1;
+  padding: 10px;
+  border: 1px solid #ccc;
+}
+
+@media screen and (max-width: 600px) {
+  .table-header,
+  .table-row {
+    flex-wrap: wrap;
+  }
+  
+  .header__item,
+  .table-data {
+    flex-basis: 50%;
+  }
+}
+
+
+/*bell */
+.constant-tilt-shake {
+  animation: tilt-shaking 0.3s infinite;
+}
+
+
+@keyframes tilt-shaking {
+  0% { transform: rotate(0deg); }
+  25% { transform: rotate(5deg); }
+  50% { transform: rotate(0eg); }
+  75% { transform: rotate(-5deg); }
+  100% { transform: rotate(0deg); }
+}
+
+.skew-shake-x {
+  animation: skew-x-shake 1.3s infinite;
+}
+
+@keyframes skew-x-shake {
+  0% { transform: skewX(-15deg); }
+  5% { transform: skewX(15deg); }
+  10% { transform: skewX(-15deg); }
+  15% { transform: skewX(15deg); }
+  20% { transform: skewX(0deg); }
+  100% { transform: skewX(0deg); }  
 }
     </style>
   </head>
@@ -549,54 +696,276 @@ h3{
 
 
       <div class="content">
-        <div class="section" style="text-align: center; margin-bottom: 0px;"><h1 style="font-weight: 350;font-size: 34px;line-height: 54px;color: #222222;font-family: 'Tenor Sans';text-transform: capitalize;" >submission</h1> <br>
+        <div class="section" >
+        <p>    </h1 style="text-align: justify;font-family: Arial, Helvetica, sans-serif;line-height:28px;color:#666666" ><i class="fa fa-calendar-plus-o skew-shake-x" aria-hidden="true" ></i> Important Dates</h1> </p>
+        <br>
+        <br>
 
-        <div class="section" style="text-align: justify;">
-          <h2 style="font-weight: 350;font-size: 24px;line-height: 54px;color: #222222;font-family: 'Tenor Sans';text-transform: capitalize;"> Template Download</h2>
-          <p>
+          <p style="text-align: justify;font-family: Arial, Helvetica, sans-serif;line-height:28px;color:#666666">  
+
+
+            English is the official language of the AIoTSS 23. It shall be used for all printed materials, presentations and discussions. Submitted publication should contain original materials which have not been previously published and are not under review elsewhere.
+
+The final version of a paper must be 5-6 pages and be prepared according to the guidelines defined in Conference Template. The paper should be submitted in DOC, DOCX, or PDF formats (in English only).
+
+          </p>
+
+          <br> <br>
+
+          <a href="SE_Word_Template.doc" download="SE_Word_Template.doc" class="buttons">
+            <i class="fa fa-cloud-download" aria-hidden="true"></i> Download Word Template
+          </a>
+          
+
+          <a href="#" class="buttons"><i class="fa fa-cloud-download" aria-hidden="true"></i>  Download Latex Template</a>
+
+
+
+
+          <br><br>
+
+
+          <p style="text-align: justify;font-family: Arial, Helvetica, sans-serif;line-height:28px;color:#666666">  
+
+
+            An extra fee will be charged for each additional page above 6 pages. Papers should be submitted online via EasyChair system.
+          </p>
+
+
+          <br><br>
+          <a href="https://easychair.org/account/signin?l=YYiH51qqEWt0QrjSjB13WC" class="buttons"><i class="fa fa-cloud-download" aria-hidden="true"></i>  Submit Papers</a>
+
+
+
+            <br><br><br>
+            <p style="text-align: justify;font-family: Arial, Helvetica, sans-serif;line-height:28px;color:#666666">  
+
+
+              The submitted publication should define the scope of the paper, emphasizing new advances, theories and/or applications and include an analysis of results.
+
+              After notification of paper acceptance, it is a requirement that at least the one presenting author of every accepted paper must get registered, pay a participation fee and take part in the conference.
+              
+              It should be noted that one author can be co-author not more than in two papers. Exception is the scientists who are heads of the scientific schools and their PhD students presents the joint results of the research.
+              
+              AIoTSS 23 will have a single-round blind peer review process. All submitted papers will be sent to at least two independent anonymous reviewers. All accepted papers which will be presented at the conference will be included in AIoTSS Conference Proceedings.
+            </p>
+
+            <br><br>
+
+            <p style="box-shadow: rgba(0, 0, 0, 0.1) 0px 4px 12px;;text-align: justify;font-family: Arial, Helvetica, sans-serif;line-height:28px;color:#666666;font-size: 20px;text-align: center;">
+              <br><br>
+              The SIoT Conference Proceedings will be submitted for consideration in various Abstracting and Indexing (A&I) databases.
+              <br><br>
+           
+            </p>
+            
+            <br><br>
+
+
+
            
 
-<a href="" style="font-weight: 350;font-size: 18px;line-height: 54px;color: #222222;font-family: 'Tenor Sans';text-transform: capitalize; ">Springer-Formatting.doc</a>
+            <h2 style="font-weight: 350;font-size: 24px;line-height: 54px;color: #222222;font-family: 'Tenor Sans';text-transform: capitalize;">  “No-show” papers won’t be included into the SIoT Conference Proceedings..</h2>
+
 <br>
 
+<p style="text-align: justify;font-family: Arial, Helvetica, sans-serif;line-height:28px;color:#666666">  
 
-<h2 style="font-weight: 350;font-size: 24px;line-height: 54px;color: #222222;font-family: 'Tenor Sans';text-transform: capitalize;" >1. Full Paper (Presentation and Publication)</h2>
 
-<p >Accepted full paper will be invited to give the oral presentation at the conference and be published in the conference proceeding.
-</p>
-<h3 >2. Short Papers (Posters and Publications Only)</h3>
-
-<p style="font-family: Arial, Helvetica, sans-serif;line-height :28px;">
-  Accepted short papers will be invited to give the posters at the conference.
-
-For any inquiry about the conference, please feel free to contact us at: stsiot2023@126.com.
-
-Page Requirements
-
-Each paper should have no less than 5 Pages normally, including all figures, tables, and references. 
-
-One regular registration is within 10 Pages. Extra pages will be charged.
-</p>
-
-          </p>
-        </div>
-        <div class="section">
-          <h2 style="text-align: left;font-weight: 350;font-size: 24px;line-height: 54px;color: #222222;font-family: 'Tenor Sans';text-transform: capitalize;">Submission Requests</h2>
-          <p style="text-align: justify;font-family: Arial, Helvetica, sans-serif;line-height:28px;">
-            
-
-All submitted articles should report original, previously unpublished research results, experimental or theoretical. Articles submitted to the conference should meet these criteria and must not be under consideration for publication elsewhere. We firmly believe that ethical conduct is the most essential virtual of any academic. Hence any act of plagiarism is a totally unacceptable academic misconduct and cannot be tolerated. If an author is found to commit an act of plagiarism, the following acts of sanction will be taken: 
+ <i style="font-weight: bold;"> Ethics and Permissions: </i>  The results of the research presented in the manuscript, should be original. However, if figures, tables, animations or text quotations from copyrighted works (including websites) are included in the paper, permission must be obtained from the copyright holder (usually the original publisher) and the author(s) for both the print and the online format.
 <br><br>
-            <ol style="text-align: justify;font-family: Arial, Helvetica, sans-serif;line-height:28px;">
-              <li style="">Reject the article submitted or delete the article from the final publications. </li>
-              <li>Report the authors violation to his/her supervisor(s) and affiliated institution(s).</li>
-              <li>Report the authors violation to the appropriate overseeing office of academic ethics and research funding agency</li>
-              <li>Reserve the right to publish the authors name(s), the title of the article, the name(s) of the affiliated institution and the details of misconduct, etc. of the plagiarist.</li>
-            </ol>
+ <i style="font-weight: bold;">Avoidance of Self-plagiarism: </i> A certain overlap in scientific content between articles by the same author is standard practice and to be expected. However, it is essential that transparency is retained and appropriate references included. Permission must be obtained from other publishers, where appropriate.
 
-          </p>
+
+</p>
+
+        <br>
+        <i style="color:#666;font-family: Arial, Helvetica, sans-serif;"><i class="fa fa-envelope-o" aria-hidden="true">  </i> ai.iot@neu.edu.tr  <a href="mailto:ai.iot@neu.edu.tr">ai.iot@neu.edu.tr</a> </i>
+</br>
+
+       
+        
+
+<br><br>
+<p>
+<h2 style="font-weight: 350;font-size: 24px;line-height: 54px;color: #222222;font-family: 'Tenor Sans';text-transform: capitalize;"> <i class="fa fa-database" aria-hidden="true"></i>  Registration</h2>
+</p>
+
+<p style="text-align: justify;font-family: Arial, Helvetica, sans-serif;line-height:28px;color:#666666">  
+
+
+  <i style="font-weight: bold;">  Author registration  </i> is compulsory for presentation, publication and proceedings. In order to include the paper in the AIoTSS conference proceedings, one of the authors of each accepted paper must present the paper and complete the registration before the specified deadline. The delegates are also welcome to attend the conference without paper submission provided that an appropriate participant registration fee have been paid.
+
+ <br>
+  
+ 
+ </p>  
+
+
+ <br>
+ <p style="text-align: justify;font-family: Arial, Helvetica, sans-serif;line-height:28px;color:#666666">  
+
+
+  <i style="font-weight: bold;">   Special discounts will be made to authors (if requested during registration process). Requests will be entertained on first-come-first-sever bases.
+  <br> <br> Following fee structure is based for virtual conference. In case of physical conference, the amount varies.
+    </i> 
+    <br>
+ <br>
+  
+ 
+ </p>
+
+ 
+ <div class="table">
+  <div class="table-header">
+    <div class="header__item"><a id="name" class="filter__link" href="#"></a></div>
+    <div class="header__item"><a id="wins" class="filter__link filter__link--number" href="#">Regular</a></div>
+    <div class="header__item"><a id="draws" class="filter__link filter__link--number" href="#">Student</a></div>
+    <div class="header__item"><a id="losses" class="filter__link filter__link--number" href="#">Participant</a></div>
+  </div>
+  <div class="table-content">
+    <div class="table-row">
+      <div class="table-data"></div>
+      <div class="table-data"></div>
+      <div class="table-data"></div>
+      <div class="table-data"></div>
+      <div class="table-data"></div>
+    </div>
+    <div class="table-row">
+      <div class="table-data">Standard</div>
+      <div class="table-data">$300</div>
+      <div class="table-data">$250</div>
+      <div class="table-data">$100</div>
+    </div>
+  </div>
+</div>
+
+
+
+<br>
+
+      <p style="text-align:justify;font-family:  Arial, Helvetica, sans-serif;line-height: 30px;">* For 'Student Registration', student must be the first author of the paper and need to provide proof of being a student (a valid student certificate/card).</p>
+                        <p>For more than one paper, author need to pay same amount as mentioned above for each paper. Extra pages (more than 6) of submitted publication imply the payment of <sup>$</sup>30 per page. </p>
+            
+                        </div>
+                        <br><br>
+                        <h3 style="font-weight: 350;font-size: 24px;line-height: 54px;color: #222222;font-family: 'Tenor Sans';text-transform: capitalize;">Fee: Local Participants</h3>
+
+
+
+<div class="container">
+	
+	<div class="table">
+		<div class="table-header">
+			<div class="header__item"><a id="name" class="filter__link" href="#"></a></div>
+			<div class="header__item"><a id="wins" class="filter__link filter__link--number" href="#">Regular</a></div>
+			<div class="header__item"><a id="draws" class="filter__link filter__link--number" href="#">Student</a></div>
+			<div class="header__item"><a id="losses" class="filter__link filter__link--number" href="#">Participant</a></div>
+	
+		</div>
+		<div class="table-content">	
+			<div class="table-row">		
+				<div class="table-data"></div>
+				<div class="table-data"></div>
+				<div class="table-data"></div>
+				<div class="table-data"></div>
+				<div class="table-data"></div>
+			</div>
+			<div class="table-row">
+				<div class="table-data">Standard</div>
+				<div class="table-data">$250</div>
+				<div class="table-data">$200</div>
+				<div class="table-data">$100</div>
+			
+			</div>
+		<div class="table-content">	
+			<div class="table-row">		
+				<div class="table-data"></div>
+				<div class="table-data"></div>
+				<div class="table-data"></div>
+				<div class="table-data"></div>
+				<div class="table-data"></div>
+			</div>
+		</div>	
+	</div>
+</div>
+
+
         </div>
       </div>
+
+      <br>
+
+
+      <p style="text-align:justify;font-family:  Arial, Helvetica, sans-serif;line-height: 30px;">* For 'Student Registration', student must be the first author of the paper and need to provide proof of being a student (a valid student certificate/card).</p>
+      <p>For more than one paper, author need to pay same amount as mentioned above for each paper. Extra pages (more than 6) of submitted publication imply the payment of <sup>$</sup>25 per page. </p>
+
+      </div>
+<br><br>
+
+
+
+
+
+
+
+
+
+ <i style="color:#666;font-family: Arial, Helvetica, sans-serif;"><i class="fa fa-envelope-o" aria-hidden="true">  </i> ai.iot@neu.edu.tr  <a href="mailto:ai.iot@neu.edu.tr">ai.iot@neu.edu.tr</a> </i>
+        
+
+
+
+
+<br><br>
+<div class="payment" style="box-shadow: rgba(0, 0, 0, 0.1) 0px 4px 12px;" > 
+<h3 style="font-weight: 350;font-size: 24px;line-height: 54px;color: #222222;font-family: 'Tenor Sans';text-transform: capitalize;"><i class="fa fa-credit-card" aria-hidden="true"></i>  Payment</h3>
+
+
+
+
+<p style="text-align: justify;font-family: Arial, Helvetica, sans-serif;line-height:28px;color:#666666">  
+
+
+  <i style="font-weight: bold;">  The corresponding author(s) of the accepted paper(s) will receive the information regarding payment method for registration via email at the time of acceptance notification.
+<br>
+    Other prospective participants can send email at <spann style="color:#6b0b5d"> ai.iot@neu.edu.tr </spann>  to get payment information.
+    </i> <br><br>
+  </div>
+ <br>
+
+ <h3 style="font-weight: 350;font-size: 24px;line-height: 54px;color: #222222;font-family: 'Tenor Sans';text-transform: capitalize;"><i class="fa fa-picture-o" aria-hidden="true"></i>  Presentation Guidelines</h3>
+
+<p style="text-align: justify;font-family: Arial, Helvetica, sans-serif;line-height:28px;color:#666666">  
+  Will be announce at time of acceptance notification.
+</p><br><br>
+<hr>
+<span  style="text-align: justify;font-family: Arial, Helvetica, sans-serif;line-height:28px;color:#666666"><i class="fa fa-bell-o constant-tilt-shake" aria-hidden="true"></i>  stay tuned for updates. </span>  
+   <br>
+
+ 
+ </p>
+<br>
+<h3 style="font-weight: 350;font-size: 24px;line-height: 54px;color: #222222;font-family: 'Tenor Sans';text-transform: capitalize;"><i class="fa fa-book" aria-hidden="true"></i> Publication & Indexing</h3>
+ 
+
+
+<p style="box-shadow: rgba(0, 0, 0, 0.1) 0px 4px 12px;;text-align: justify;font-family: Arial, Helvetica, sans-serif;line-height:28px;color:#666666;font-size: 20px;text-align: center;">
+  <br><br>
+  The AIoTSS Conference Proceedings will be submitted for consideration in various Abstracting and Indexing (A&I) databases.
+  <br><br>
+
+</p>
+<br><br>
+<span  style="text-align: justify;font-family: Arial, Helvetica, sans-serif;line-height:28px;color:#666666"><i class="fa fa-bell-o constant-tilt-shake" aria-hidden="true"></i>  stay tuned for updates. </span>  
+
+
+
+
+
+
+
+
     </main>
     <footer>
       <div class="footer">
